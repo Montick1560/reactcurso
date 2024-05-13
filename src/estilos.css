@@ -1,0 +1,72 @@
+
+.container {
+  background-size: cover; /* Asegura que la imagen de fondo cubra todo el contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  background-position: center; /* Centra la imagen de fondo en el contenedor */
+  height: 100%; /* Hace que el contenedor tenga la altura total de la vista */
+  width: 100%; /* Hace que el contenedor tenga el ancho total de la vista */
+  padding: 1rem;
+  padding-bottom: 1rem;
+  display: flex; /* Añade Flexbox al contenedor */
+  justify-content: center; /* Distribuye las tarjetas uniformemente en el contenedor */
+  align-items: center; /* Centra las tarjetas verticalmente */
+}
+.card {
+  width: 20%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+.card img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 1rem solid rgba(223, 30, 30, 0);
+  transition: all ease-in-out 0.5s;
+  border-radius: 2rem;
+}
+.card img:hover {
+  transform: scale(1.05);
+}
+.card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+img {
+  box-shadow: 0px 3px 28px -3px rgba(0, 0, 0, 0.49);
+}
+body {
+  background-image: url("./images/PantillaNaranjo.jpg");
+  font-family: "pataponfont", sans-serif;
+  transition: all ease-in-out 0.3s;
+  background-size: cover;
+}
+body.background1 {
+  background-image: url("./images/Patapon1.jpg");
+  transition: all ease-in-out 0.3s;
+  background-size: cover;
+}
+
+body.background2 {
+  background-image: url("./images/Patapon2Web.png");
+  transition: all ease-in-out 0.3s;
+  background-size: cover;
+}
+
+body.background3 {
+  background-image: url("./images/Patapon3.jpg");
+  transition: all ease-in-out 0.3s;
+  background-size: cover;
+}
+.headercontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  color: #fff;
+}
