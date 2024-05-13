@@ -1,2 +1,2 @@
-cd C:\Users\torso\OneDrive\Escritorio\ReactCurso\reactcurso
+cd C:\Users\edson\OneDrive\Documentos\GitHub\reactcurso
 npm start
