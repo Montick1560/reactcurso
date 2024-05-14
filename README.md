@@ -1,10 +1,11 @@
-# Getting Started with Create React App
+# ¡BIENVENIDO A LA WEBPON! (por que PonHub sonaba bien hasta que por error terminé en otro HUB)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto está siendo desarrollado en React.js, con la finalidad de que pueda entender como es que
+funciona esta tecnología y para empezar con mi proyecto personal
 
-## Available Scripts
+## Propósito
 
-In the project directory, you can run:
+Crear un punto de encuentro para todos los jugadores de la saga patapon y próximamente Ratatan
 
 ### `npm start`
 
