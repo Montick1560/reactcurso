@@ -1,42 +1,44 @@
-
 .container {
-  background-size: cover; /* Asegura que la imagen de fondo cubra todo el contenedor */
-  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
-  background-position: center; /* Centra la imagen de fondo en el contenedor */
-  height: 100%; /* Hace que el contenedor tenga la altura total de la vista */
-  width: 100%; /* Hace que el contenedor tenga el ancho total de la vista */
-  padding: 1rem;
-  padding-bottom: 1rem;
-  display: flex; /* Añade Flexbox al contenedor */
-  justify-content: center; /* Distribuye las tarjetas uniformemente en el contenedor */
-  align-items: center; /* Centra las tarjetas verticalmente */
-}
-.card {
-  width: 20%;
-  height: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  align-items: center;
+}
+
+.card {
+  max-width: 20vw;
+  height: 80vh;
+  padding: 1rem;
   padding-bottom: 1rem;
 }
+
 .card img {
-  width: 50%;
-  height: 50%;
+  max-width: 10vw;
+  max-height: 1000vh;
   object-fit: contain;
-  border-radius: 10px;
-  border: 1rem solid rgba(223, 30, 30, 0);
-  transition: all ease-in-out 0.5s;
   border-radius: 2rem;
+  border: .5rem solid rgba(223, 30, 30, 0);
+  transition: all ease-in-out 0.5s;
+  box-shadow: 0px 3px 28px -3px rgba(0, 0, 0, 0.49);
+
 }
+
 .card img:hover {
   transform: scale(1.05);
 }
+
 .card:active {
   transform: scale(0.95) rotateZ(1.7deg);
 }
+
 img {
   box-shadow: 0px 3px 28px -3px rgba(0, 0, 0, 0.49);
 }
+
 body {
   background-image: url("./images/bg.svg");
   font-family: "pataponfont", sans-serif;
@@ -45,6 +47,7 @@ body {
   background-repeat: no-repeat;
   overflow: hidden;
 }
+
 body.background1 {
   background-image: url("./images/Patapon1.jpg");
   transition: all ease-in-out 0.1s;
@@ -65,13 +68,36 @@ body.background3 {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .headercontainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 1rem;
+  justify-content: center;
+  padding: 2rem;
   border-radius: 1rem;
-  margin: 1rem;
+  margin: 1vb;
   color: #fff;
+}
+
+.TextoHeader {
+  animation: float 2s ease-in-out infinite;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
