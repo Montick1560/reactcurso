@@ -32,7 +32,7 @@ export function PataponImagenes() {
     { number: 3, url: Patapon3, sonido: pata3 },
   ];
   return (
-    <main className="container animate__animated animate__fadeIn">
+    <main className=" animate__animated animate__fadeIn">
       {data.map(function (item, index, arr) {
         return (
           <CarVersion
